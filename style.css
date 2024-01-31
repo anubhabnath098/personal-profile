@@ -214,10 +214,6 @@ h1{
     height:100%;
     
 }
-.hobby:hover{
-    
-    
-}
 .footer{
     display:flex;
     width:100%;
@@ -465,6 +461,4 @@ img[alt="my-photo"]{
 section .texts-2{
     display:none;
 }
-img[alt="my-photo-2"]{
 
-}
