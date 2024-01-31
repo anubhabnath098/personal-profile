@@ -66,7 +66,7 @@ img[alt="my-photo-2"]{
     height:80vh;
     left:10%;
     right:10%;
-    gap:10px;
+    gap:4rem;
     justify-content: center;
     padding-bottom:6rem;
 }
@@ -200,14 +200,22 @@ h1{
     
 
 }
+.trophy{
+    margin:0;
+    width:80%;
+    height:100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    object-fit:cover;
+    transition:0.3s;
+}
 .photo{
     width:40%;
     height:100%;
     
 }
 .hobby:hover{
-    opacity:0.6;
-    padding:1rem;
+    
     
 }
 .footer{
@@ -220,7 +228,7 @@ h1{
 .hamburger-menu{
     display:none;
 }
-@media(max-width:750px){
+@media(max-width:830px){
     .navbar{
         display:none;
     }
@@ -313,6 +321,14 @@ h1{
     .hobby{
         width:100%;
     }
+    img[alt="my-photo"]{
+        height:100%;
+        width:60%;
+        object-fit:cover;
+        margin: 0;
+        padding:0;
+        
+    }
 
     
 
@@ -397,4 +413,58 @@ h1{
     background-color: #CFD8DC;
   }
 }
+.content{
+    position:relative;
+    transition:0.3s;
+}
+.cap{
+    position:absolute;
+    top:50%;
+    left:30%;
+    display:none;
+    
+}
+.cap-2{
+    position:absolute;
+    top:60%;
+    left:30%;
+    display:none;
+}
+.content:hover{
+    
+    padding:1rem;
+}
 
+.content:hover .cap{
+    display:block;
+    opacity:1.6;
+}
+.photo{
+    position:relative;
+}
+
+.photo:hover .cap-2{
+    display:block;
+}
+.hobby:hover{
+    opacity:0.4;
+    
+}
+.hobby{
+    width:100%;
+}
+.pto-1{
+    width:100%;
+}
+img[alt="my-photo"]{
+    width:100%;
+}
+
+
+
+section .texts-2{
+    display:none;
+}
+img[alt="my-photo-2"]{
+
+}
