@@ -14,6 +14,7 @@ html,body{
     gap:20px;
     justify-content: space-between;
     padding-bottom:2rem;
+    margin-top:1rem;
 }
 .left-nav{
     
@@ -461,4 +462,36 @@ img[alt="my-photo"]{
 section .texts-2{
     display:none;
 }
+.scroll-watcher{
+    height:10px;
+    position:fixed;
+    top:0;
+    z-index:10000;
+    background-color: red;
+    width:100%;
+    scale:0 1;
+    transform-origin:left;
 
+    animation:scroll-watcher linear;
+    animation-timeline:scroll();
+}
+
+@keyframes scroll-watcher{
+    to{ scale:1 1;}
+}
+.inside{
+    margin:0;
+    padding:none;
+}
+h3{
+    margin:0;
+}
+div.in{
+    margin:0.6rem;
+    border-bottom:solid;
+    border-color:#616161;
+
+}
+.inside{
+    color:#b6b5b5;
+}
