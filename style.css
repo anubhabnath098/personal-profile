@@ -495,7 +495,7 @@ section .texts-2{
     display:none;
 }
 .scroll-watcher{
-    height:10px;
+    height:6px;
     position:fixed;
     top:0;
     z-index:10000;
